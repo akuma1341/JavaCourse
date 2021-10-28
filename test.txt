@@ -1,0 +1,54 @@
+1. примитивные: boolean, short, int, long, double, float, char
+ссылочные: массивы, классы, интерфейсы
+
+2. while, do while, for, for each. Используются повсеместно, например для перебора массивов.
+
+3.
+ int a = scanner.nextInt();
+ switch(a) {
+	case 1:
+		System.out.println("first");
+		break;
+	case 2:
+		System.out.println("second");
+		break;
+	default:
+		System.out.println("default");
+		break;
+
+4.
+ if(10 > 1) {
+	System.out.println("10 > 1");
+ } else {
+	System.out.println("10 < 1");
+}
+
+5. String[] strings = new String[3];
+
+6.
+ int[] firstArray = new int[2];
+ int[] secondArray = new int[3];
+ int length = firstArray.length + secondArray.length;
+ int[] thirdArray = new int[length];
+
+7. break - оператор перрывания процесса, например прерывает выполнение цикла. continue - оператор прерывания шага цикла
+
+8. int[][] arr = new int[3][3]; 3-х и более слишком сложные, а их обработка занимает много времени
+
+9. public class Test {
+    public static void main(String[] args) {
+        String[][] arr = new String[3][3];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = "*";
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
